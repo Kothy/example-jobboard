@@ -1,6 +1,6 @@
-module.exports = {
-    component: {
+export default (config) => ({
+    default: {
         templates: ["templates"],
         output: "./",
     },
-}
+})

@@ -1,0 +1,50 @@
+{
+	"name": "@almacareer/cyborg-{{name}}",
+	"description": "Frontend App for Alma Career Platform",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/almacareer/platform-frontends.git",
+		"directory": "{{name}}"
+	},
+	"keywords": [
+		"app",
+		"jobportal",
+		"cyborg",
+		"alma",
+		"career",
+		"platform"
+	],
+	"scripts": {
+		"dev": "yarn env cyborg && yarn next:dev",
+		"build": "yarn create-container && next build",
+		"next:dev:run": "next dev",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@testing-library/react": "~16.0.1",
+		"classnames": "^2.5.1",
+		"i18next": "^23.14.0",
+		"next": "^14.2.4",
+		"react": "^18.3.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@vitest/ui": "^2.1.8",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "14.2.4",
+		"npm-run-all2": "^6.2.2",
+		"typescript": "~5.5.4",
+		"vite": "^5.4.9",
+		"vite-tsconfig-paths": "^4.3.2",
+		"vitest": "~2.1.6"
+	},
+	"peerDependencies": {
+		"i18next-intervalplural-postprocessor": "^3.0.0",
+		"react-i18next": "^15.0.1"
+	}
+}

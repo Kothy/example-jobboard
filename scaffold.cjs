@@ -1,6 +1,6 @@
 module.exports = (config) => ({
     default: {
-        templates: ["templates"],
-        output: "./",
+        templates: ["./templates"],
+        output: "src",
     },
 })
